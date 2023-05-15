@@ -5,3 +5,12 @@ compatibility_date = "2023-05-14"
 kv_namespaces = [
     { binding = "DB", id = "d67d91ce3d454bbe9bd226e0a7b2ff29", preview_id = "f538614c33da4e76adde7ad5b86068a0" }
 ]
+
+[durable_objects]
+bindings = [
+    {name = "CHAT", class_name = "ChatRoom"}
+]
+
+[[migrations]]
+tag="v1"
+new_classes = ["ChatRoom"]
